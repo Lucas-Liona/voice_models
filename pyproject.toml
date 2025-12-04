@@ -1,0 +1,53 @@
+[tool.poetry]
+name = "voice-models"
+version = "0.1.0"
+description = "Detection of dementia on voice recordings using deep learning"
+authors = ["Your Name <your.email@example.com>"]
+readme = "README.md"
+packages = [{include = "azrt2021"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+astroid = ">=2.6.5"
+cycler = ">=0.10.0"
+isort = ">=5.9.3"
+joblib = ">=1.0.1"
+kiwisolver = ">=1.3.1"
+lazy-object-proxy = ">=1.6.0"
+matplotlib = ">=3.5.0"
+mccabe = ">=0.6.1"
+numpy = ">=1.21.0"
+pandas = ">=1.3.0"
+Pillow = ">=8.3.1"
+pylint = ">=2.9.6"
+pyparsing = ">=2.4.7"
+python-dateutil = ">=2.8.1"
+pytz = ">=2021.1"
+scikit-learn = ">=0.24.2"
+scipy = ">=1.7.0"
+six = ">=1.16.0"
+threadpoolctl = ">=2.1.0"
+toml = ">=0.10.2"
+torch = ">=1.10.1"
+tqdm = ">=4.61.0"
+wrapt = ">=1.12.1"
+librosa = ">=0.9.0"
+soundfile = ">=0.10.0"
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "^1.0.0"
+ipykernel = "^6.25.0"
+black = "^23.0.0"
+mypy = "^1.5.0"
+flake8 = "^6.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 79
+
+[tool.isort]
+profile = "black"
+line_length = 79
